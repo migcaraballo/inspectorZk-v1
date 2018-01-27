@@ -88,6 +88,6 @@ public class ManualController extends AbstractChildStageController {
 
 	@FXML
 	private void issuesLinkAction(){
-		InspectorZKMain.showDoc("https://github.com/migcaraballo/inspectorzkv1/issues/new");
+		InspectorZKMain.showDoc("https://github.com/migcaraballo/inspectorZk-v1/issues/new");
 	}
 }

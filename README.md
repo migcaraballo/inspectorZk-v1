@@ -22,3 +22,10 @@ There are 2 ways to start the app:
 
 1. double-click jar file
 2. command-line: shell> java -jar inspectorzk-1.0.0-executable.jar
+
+
+### Issues/Bugs/Suggestions
+
+For any issues or feature requests, plesase feel free to submit a ticket:
+https://github.com/migcaraballo/inspectorZk-v1/issues/new
+
