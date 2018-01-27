@@ -9,8 +9,11 @@ import javafx.scene.text.Text;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.net.URI;
+import java.nio.file.*;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by migc on 1/20/18.
  */
@@ -43,6 +46,13 @@ public class ManualController extends AbstractChildStageController {
 		super.init();
 
 		try {
+
+			// setup filesystem
+			URI uri = getClass().getResource("/props").toURI();
+			Map<String, String> env = new HashMap<>();
+			env.put("create", "true");
+			FileSystem zfs = FileSystems.newFileSystem(uri, env);
+
 			byte[] txtData = Files.readAllBytes(Paths.get(getClass().getResource("/props/manual-descript.txt").toURI()));
 			if(txtData != null) {
 				generalDescripText.setText(new String(txtData, "UTF-8"));
@@ -65,7 +75,7 @@ public class ManualController extends AbstractChildStageController {
 				viewZnodesText.setText(new String(txtData, "UTF-8"));
 
 		} catch (Exception e) {
-			log.error(e.getMessage());
+			log.error(e);
 		}
 
 		getControllerStage().setAlwaysOnTop(true);
