@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="authNode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="233.0" prefWidth="335.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.migs.zk.inspectorzk.ui.controllers.AuthenticationController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="295.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Authentication">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="295.0" spacing="10.0">
+         <children>
+            <Label text="Scheme:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Digest" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="295.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="48.0" text="User:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userTextField" prefHeight="27.0" prefWidth="229.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="112.0" prefHeight="37.0" prefWidth="295.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="68.0" text="Pass:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordField" prefHeight="27.0" prefWidth="225.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="295.0" spacing="10.0">
+         <children>
+            <Button fx:id="authButton" mnemonicParsing="false" onAction="#authButtonAction" text="Auth" />
+            <Button fx:id="cancelButton" layoutX="246.0" layoutY="16.0" mnemonicParsing="false" onAction="#cancelButtonAction" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

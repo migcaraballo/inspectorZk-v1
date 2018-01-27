@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" spacing="10.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.migs.zk.inspectorzk.ui.controllers.AddChildNodeController">
+   <children>
+      <FlowPane prefHeight="26.0" prefWidth="600.0">
+         <children>
+            <Text fill="#000000b3" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Child Node">
+               <font>
+                  <Font name="Arial Bold Italic" size="26.0" />
+               </font>
+            </Text>
+         </children>
+      </FlowPane>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add To:" />
+            <Text fx:id="parentPathText" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="{path}" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="34.0" prefWidth="380.0" spacing="10.0">
+         <children>
+            <Label text="Child Name:">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="childTextField" prefHeight="40.0" prefWidth="291.0" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <Label text="Data:">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="dataTextArea" prefHeight="200.0" prefWidth="200.0" />
+      <ButtonBar prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+          <Button fx:id="addButton" mnemonicParsing="false" onAction="#addButtonAction" text="Add" />
+            <Button fx:id="clearButton" layoutX="320.0" layoutY="10.0" mnemonicParsing="false" onAction="#clearButtonAction" text="Clear" />
+            <Button fx:id="cancelButton" layoutX="320.0" layoutY="10.0" mnemonicParsing="false" onAction="#cancelButtonAction" text="Cancel" />
+        </buttons>
+      </ButtonBar>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

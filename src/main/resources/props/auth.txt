@@ -1,0 +1,21 @@
+Menu -> Connect -> Auth
+
+For now, authentication is limited to digest scheme, mostly because i'm not sure i need to integrate other schemes yet.
+
+If i get enough requests for more auth schemes/integrations, i will be happy to work on it.
+
+FYI - Auth is very basic, infact, getting a "Successful" alert is based on the fact that the API didn't throw an error.
+
+In reality, auth is handled similar to the "addauth" command supplied by zkCli.
+
+Scheme Specifics:
+
+Digest Scheme - FYI: while passwords are masked in inspectorZK, they are stored in plain text in zookeeper. Another option to keeping passwords masked/hashed, is to first athenticate the use via Auth Menu option, then Add the ACL with "Auth" scheme. If this is for a user other than yourself, you will need access to that users credentials (id/pass).
+
+Auth Scheme - This is used to add an authenticated user. This means you have authenticated via the Auth menu option prior to using this option.
+
+IP Scheme - Provde a valid IP address.
+
+SASL Scheme - Only way this is going to work is if your zookeeper instance has been configured with SASL.
+
+World Scheme - Use this if you want a znode to be open to anyone with the selected permissions.

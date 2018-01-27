@@ -1,0 +1,9 @@
+Menu -> Connect -> Open...
+
+Connecting to ZK is done by the menu option "Open...". This will open a window that will allow you to enter a host and a port.
+
+If you've connected to a host prior, by default, the form will be pre-poplated with those values.
+
+If you've connected to more than 1 host prior, the list of hosts will be available in the drop-down menu.
+
+Currently, i've only supported 1 connection at a time. Multiple connections could happen later.

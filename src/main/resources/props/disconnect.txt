@@ -1,0 +1,3 @@
+Menu -> Connect -> Disconnect
+
+Just as you thought, disconnects you from current ZK server.

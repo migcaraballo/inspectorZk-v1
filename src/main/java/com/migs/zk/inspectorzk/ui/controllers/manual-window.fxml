@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="350.0" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.migs.zk.inspectorzk.ui.controllers.ManualController">
+   <content>
+      <VBox prefHeight="590.0" prefWidth="287.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="350.0" spacing="5.0">
+               <children>
+                  <Text fill="#00000095" strokeType="OUTSIDE" strokeWidth="0.0" text="InspectorZK Manual">
+                     <font>
+                        <Font name="Arial Bold Italic" size="24.0" />
+                     </font>
+                  </Text>
+                  <Separator minWidth="-Infinity" opacity="0.0" prefWidth="45.0" />
+                  <Button fx:id="closeButton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="27.0" prefWidth="27.0" text="X" />
+               </children>
+            </HBox>
+            <HBox fillHeight="false" layoutX="20.0" layoutY="20.0" prefWidth="325.0">
+               <children>
+                  <Text fx:id="generalDescripText" fill="#000000b2" strokeType="OUTSIDE" strokeWidth="0.0" text="Description." wrappingWidth="310.0">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox minWidth="-Infinity" prefHeight="43.0" prefWidth="320.0">
+               <children>
+                  <Hyperlink fx:id="issuesLink" onAction="#issuesLinkAction" text="Report Bug" underline="true" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font></Hyperlink>
+               </children>
+            </HBox>
+            <HBox layoutX="20.0" layoutY="20.0" prefHeight="0.0" prefWidth="350.0">
+               <children>
+                  <Text fill="#000000bf" strokeType="OUTSIDE" strokeWidth="0.0" text="Connecting to ZK" underline="true">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="20.0" layoutY="67.0" prefHeight="14.0" prefWidth="350.0">
+               <children>
+                  <Text fx:id="connectionDescripText" fill="#000000b3" strokeType="OUTSIDE" strokeWidth="0.0" text="Description." wrappingWidth="310.0">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="20.0" layoutY="101.0" prefHeight="0.0" prefWidth="350.0">
+               <children>
+                  <Text fill="#000000bf" strokeType="OUTSIDE" strokeWidth="0.0" text="Disconnecting from ZK" underline="true">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="20.0" layoutY="127.0" prefHeight="0.0" prefWidth="350.0">
+               <children>
+                  <Text fx:id="disconnectText" fill="#000000b2" strokeType="OUTSIDE" strokeWidth="0.0" text="Description." wrappingWidth="310.0">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="20.0" layoutY="101.0" prefHeight="0.0" prefWidth="350.0">
+               <children>
+                  <Text fill="#000000bf" strokeType="OUTSIDE" strokeWidth="0.0" text="Authentication" underline="true">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="20.0" layoutY="137.0" prefHeight="0.0" prefWidth="350.0">
+               <children>
+                  <Text fx:id="authText" fill="#000000b2" strokeType="OUTSIDE" strokeWidth="0.0" text="Description." wrappingWidth="310.0">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="20.0" layoutY="161.0" prefHeight="0.0" prefWidth="350.0">
+               <children>
+                  <Text fill="#000000bf" strokeType="OUTSIDE" strokeWidth="0.0" text="Viewing Znodes" underline="true">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="20.0" layoutY="187.0" prefHeight="0.0" prefWidth="350.0">
+               <children>
+                  <Text fx:id="viewZnodesText" fill="#000000b2" strokeType="OUTSIDE" strokeWidth="0.0" text="Description." wrappingWidth="310.0">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </content>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</ScrollPane>

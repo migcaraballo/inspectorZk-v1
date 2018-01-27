@@ -1,0 +1,5 @@
+This is somewhat of a manual. It's by no means comprehensive, but it's also, as they say, a work-in-progress. Edits are bound to come.
+
+The current version is < 1.0 so we're in beta. Bugs are expected, but i will take care of as many as possible before final 1.0 release.
+
+If you encounter any issues/bugs, please let me know:

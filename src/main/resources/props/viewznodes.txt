@@ -1,0 +1,13 @@
+Menu -> Znodes -> Get Znode
+
+Opens a window where, you guessed it, will allow you to retrieve znode data.
+
+If you've looked at znodes before, it will pre-populate the path with the last znode path you retrieved. If it's the first time, you will get root ("/").
+
+You can see the normal info associated with a znode: children (sub-nodes), ACL's, and Stat info by clicking on the tabs.
+
+To view child data, double-click the child name.
+
+There are also "Back" and "Forward" buttons that correspond to path history. Every time you look up a new path, it will be added to history and you can go back/forth between them using said buttons.
+
+By default, history limit = 10 paths per session, they are not persisted. This might change later if i get enough requests.

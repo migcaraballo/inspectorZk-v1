@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.migs.zk.inspectorzk.ui.controllers.MainController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+            <Menu mnemonicParsing="false" text="File">
+              <items>
+                  <Menu mnemonicParsing="false" text="Clear Cache">
+                    <items>
+                      <MenuItem fx:id="clearPreviousHostsItem" mnemonicParsing="false" onAction="#clearPreviousHostAction" text="Previous Hosts" />
+                        <MenuItem fx:id="clearLastPathItem" mnemonicParsing="false" onAction="#clearLastPathAction" text="Last Path" />
+                    </items>
+                  </Menu>
+                <MenuItem fx:id="exitItem" mnemonicParsing="false" onAction="#exitAction" text="Exit" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Connect">
+            <items>
+                  <MenuItem fx:id="openConnectionItem" mnemonicParsing="false" onAction="#openConnectionItemAction" text="Open..." />
+                  <MenuItem fx:id="authItem" mnemonicParsing="false" onAction="#authItemAction" text="Auth" />
+              <MenuItem fx:id="disconnectItem" mnemonicParsing="false" onAction="#disconnectItemAction" text="Disconnect" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Znodes">
+              <items>
+                <MenuItem fx:id="getZNodeItem" mnemonicParsing="false" onAction="#getZNodeItemAction" text="Get Znode" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem fx:id="manualItem" mnemonicParsing="false" onAction="#manualItemAction" text="Manual (somewhat)" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER_LEFT" minWidth="-Infinity" prefHeight="34.0" prefWidth="600.0" style="-fx-border-width: 1px 0 0 0; -fx-border-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Status:" textOrigin="CENTER">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Text>
+            <Text fx:id="statusText" layoutX="10.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="!connected" textOrigin="CENTER">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Text>
+            <Separator opacity="0.0" prefHeight="0.0" prefWidth="361.0" HBox.hgrow="ALWAYS" />
+            <Text fx:id="authStatusText" layoutX="74.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="!authed" textAlignment="RIGHT" textOrigin="CENTER" wrappingWidth="187.7138671875">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>

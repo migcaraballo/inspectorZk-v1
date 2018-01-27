@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="titleNode" minWidth="-Infinity" prefHeight="200.0" prefWidth="420.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.migs.zk.inspectorzk.ui.controllers.TitleController">
+   <children>
+      <Text fill="#0000004b" strokeType="OUTSIDE" strokeWidth="0.0" text="InspectorZK">
+         <font>
+            <Font name="Arial Italic" size="66.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="75.0" />
+         </VBox.margin>
+      </Text>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+         <children>
+            <Text fill="#0000005a" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tips" underline="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#0000009a" strokeType="OUTSIDE" strokeWidth="0.0" text="1.Get a connection">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text fill="#0000009a" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu -&gt; Connection -&gt;" />
+                  <Hyperlink fx:id="openLink" onAction="#openLinkAction" text="Open..." underline="true" />
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+            <Text fill="#0000009a" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. After Connection">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text fill="#0000009a" strokeType="OUTSIDE" strokeWidth="0.0" text="View Znodes: Menu -&gt; Znodes -&gt;" />
+                  <Hyperlink fx:id="getZnodeLink" onAction="#getZnodeLinkAction" text="Get Znode" underline="true" />
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
