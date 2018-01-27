@@ -6,6 +6,11 @@ This started out as a project to get more familiar with ZooKeeper, while at the 
 ### Requirements
 InspectorZK is a Java application. In order to run this app, you will need to have Java 8(+) installed.
 
+You will also need a Zookeeper Server/Quorum.
+
+As of initial checkin, Zookeeper version: 3.4.11 is supported.
+
+
 ### Download
 Please check the "dist" folder to get the latest Jar.
 At the time of initial check-in, the current version is: inspectorzk-1.0.0-executable.jar
